@@ -1,0 +1,18 @@
+import pandas as pd
+
+# Sample DataFrame
+data = {
+    'A': ['Hello', 'World', 'Foo', 'Bar'],
+    'B': ['Python', 'Pandas', 'DataFrame', 'Column']
+}
+
+df = pd.DataFrame(data)
+
+# Function to swap case
+def swap_case(column):
+    return column.str.swapcase()
+
+# Swap case in column 'A'
+df['A'] = swap_case(df['A'])
+
+print(df)
