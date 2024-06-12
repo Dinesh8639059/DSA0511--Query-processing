@@ -1,0 +1,19 @@
+# Importing the matplotlib library
+import matplotlib.pyplot as plt
+
+# Sample data
+x = [1, 2, 3, 4, 5]
+y = [2, 3, 5, 7, 11]
+
+# Creating the plot
+plt.plot(x, y, marker='o')
+
+# Adding labels
+plt.xlabel('X Axis Label')
+plt.ylabel('Y Axis Label')
+
+# Adding a title
+plt.title('Sample Line Plot')
+
+# Display the plot
+plt.show()
